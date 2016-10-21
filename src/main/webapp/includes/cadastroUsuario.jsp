@@ -5,7 +5,7 @@
 	
 
 	<div class="formulario">
-		<form action="ListaUsuarios" method="post">
+		<form  method="post" id="form-add-usuario">
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="form-group">

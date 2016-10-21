@@ -1,17 +1,28 @@
-console.log("Zabum Framework");
 
-ApplicationLoad = {
-  init: function () {
-    this.load_page();
-  },
+$(document).ready(function(){ 
 
-  load_page: function(){
-    $(window).load(function(){
-      $("#load").fadeOut(500).delay(500);
-    });
+	carregar();
 
-  },
 
-}
+jQuery('#form-add-usuario').submit(function(){
 
-$(document).ready( function () { ApplicationLoad.init(); });
+			var dados = jQuery(this).serialize();
+
+			jQuery.ajax({
+				type: "POST",
+				url: "AdicionarUsuario",
+				data: dados,
+				success: function(data)
+				{ 
+					console.log(data);
+				}
+			});
+			return false;
+			
+		});
+
+});
+
+	function carregar(){
+		$('#listaUsuarios').load("ListaUsuarios");
+	}

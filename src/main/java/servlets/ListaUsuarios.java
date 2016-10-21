@@ -2,6 +2,7 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import classes.Usuario;
+import database.Conexao;
 import database.OperacaoOcorrencia;
 import database.OperacaoUsuario;
 
@@ -37,12 +39,47 @@ public class ListaUsuarios extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		PrintWriter imprime = response.getWriter();
-		String nome = request.getParameter("nome");
-		String email = request.getParameter("email");
-		
-		imprime.write(nome);
-		imprime.write(email);
+		try {
+			OperacaoUsuario ou = new OperacaoUsuario();
+			ArrayList<HashMap<String, String>> lista = new ArrayList<HashMap<String,String>>();
+			lista = ou.listaUsuarios();
+			PrintWriter writer = response.getWriter();
+			
+			for (int i = 0; i < lista.size(); i++) {
+				writer.print("<tr>");
+				writer.print("<th scope='row'>"+ lista.get(i).get("id") +"</th>");
+				writer.print("<td>"+ lista.get(i).get("nome") +"</td>");
+				writer.print("<td>"+ lista.get(i).get("email") +"</td> ");
+				writer.print("<td class='ops'>");
+				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Ativar'>");
+				writer.print("<div class='table-ops ativar bt-ativar' data-id=''></div>");
+				writer.print("</a>");
+				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Desativar'>");
+				writer.print("<div class='table-ops desativar bt-desativar' data-id=''></div>");
+				writer.print("</a>");
+				writer.print("</td>");
+				writer.print("</tr>");
+			}
+				
+				
+	
+			
+			
+			
+			writer.flush();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

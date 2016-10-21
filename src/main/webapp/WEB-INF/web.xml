@@ -7,6 +7,16 @@
     version="3.0">
 
     <display-name>Ocorrencias</display-name>
+    <servlet>
+    	<servlet-name>AdicionarUsuario</servlet-name>
+    	<display-name>AdicionarUsuario</display-name>
+    	<description></description>
+    	<servlet-class>servlets.AdicionarUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AdicionarUsuario</servlet-name>
+    	<url-pattern>/AdicionarUsuario</url-pattern>
+    </servlet-mapping>
 
 
   

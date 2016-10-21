@@ -27,22 +27,10 @@
 				<th>Opções</th> 
 			</tr> 
 		</thead> 
-		<% String array = (String)  request.getSession().getAttribute("usuarios"); %>
+		
 		<tbody id='listaUsuarios' class="tabela-fotos"> 
 		
-			 <tr> 
-				<th scope="row"></th> 
-				<td>${array}</td> 
-				<td></td> 
-				<td class="ops">
-					<a class="tooltips" data-toggle="tooltip" data-placement="right" title="Ativar">
-						<div class="table-ops ativar bt-ativar" data-id=""></div>
-					</a>
-					<a class="tooltips" data-toggle="tooltip" data-placement="right" title="Desativar">
-						<div class="table-ops desativar bt-desativar" data-id=""></div>
-					</a>
-				</td> 
-			</tr>
+			 
 		
 		</tbody> 
 	</table>

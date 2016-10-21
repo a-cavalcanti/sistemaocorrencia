@@ -16,7 +16,7 @@
 		                    <div class="panel-body">
 		                        <ul class="nav navbar-nav">
 		                            <li><a href="?section=usuarios&op=cadastrar">Cadastrar</a></li>
-		                            <li><a href="ListaUsuarios">Gerenciar</a></li>
+		                            <li><a href="?section=usuarios&op=gerenciar">Gerenciar</a></li>
 		                        </ul>
 		                    </div>
 		                </div>
