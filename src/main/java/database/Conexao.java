@@ -11,7 +11,7 @@ public class Conexao{
 	
 	public static Connection getConnection() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
-		String stringConexao ="jdbc:mysql://127.0.0.1/ocorrencia?user=root&password=1234";
+		String stringConexao ="jdbc:mysql://127.0.0.1:8889/ocorrencia?user=root&password=root";
 		Connection connection = DriverManager.getConnection(stringConexao);		
 		return connection;
 	}

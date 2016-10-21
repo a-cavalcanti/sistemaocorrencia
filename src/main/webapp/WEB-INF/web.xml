@@ -7,6 +7,36 @@
     version="3.0">
 
     <display-name>Ocorrencias</display-name>
+    <servlet>
+    	<servlet-name>AdicionarUsuario</servlet-name>
+    	<display-name>AdicionarUsuario</display-name>
+    	<description></description>
+    	<servlet-class>servlets.AdicionarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>ExcluirUsuario</servlet-name>
+    	<display-name>ExcluirUsuario</display-name>
+    	<description></description>
+    	<servlet-class>servlets.ExcluirUsuario</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>ListarUsuarioId</servlet-name>
+    	<display-name>ListarUsuarioId</display-name>
+    	<description></description>
+    	<servlet-class>servlets.ListarUsuarioId</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AdicionarUsuario</servlet-name>
+    	<url-pattern>/AdicionarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ExcluirUsuario</servlet-name>
+    	<url-pattern>/ExcluirUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ListarUsuarioId</servlet-name>
+    	<url-pattern>/ListarUsuarioId</url-pattern>
+    </servlet-mapping>
 
 
   
