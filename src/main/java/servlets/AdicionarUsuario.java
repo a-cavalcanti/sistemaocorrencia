@@ -55,18 +55,22 @@ public class AdicionarUsuario extends HttpServlet {
 			OperacaoUsuario op = new OperacaoUsuario();
 			try {
 				op.adicionarUsuario(usuario);
-				imprime.write("ok");
+				imprime.write("Usuário adicionado com sucesso.");
 			} catch (InstantiationException e) {
 				// TODO Auto-generated catch block
+				imprime.write("Aconteceu um erro");
 				e.printStackTrace();
 			} catch (IllegalAccessException e) {
 				// TODO Auto-generated catch block
+				imprime.write("Aconteceu um erro");
 				e.printStackTrace();
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
+				imprime.write("Aconteceu um erro");
 				e.printStackTrace();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
+				imprime.write("Aconteceu um erro");
 				e.printStackTrace();
 			}
 			

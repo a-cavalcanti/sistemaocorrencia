@@ -51,15 +51,15 @@ public class ListaUsuarios extends HttpServlet {
 				writer.print("<td>"+ lista.get(i).get("nome") +"</td>");
 				writer.print("<td>"+ lista.get(i).get("email") +"</td> ");
 				writer.print("<td class='ops'>");
-				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Ativar'>");
+				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Editar'>");
 				writer.print("<div class='table-ops ativar bt-ativar' data-id=''></div>");
 				writer.print("</a>");
-				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Desativar'>");
-				writer.print("<div class='table-ops desativar bt-desativar' data-id=''></div>");
-				writer.print("</a>");
+				writer.print("<div class='table-ops excluir bt-excluir' data-id='"+ lista.get(i).get("id") +"' data-info='"+ lista.get(i).get("nome") +"'></div>");
 				writer.print("</td>");
 				writer.print("</tr>");
 			}
+			
+			writer.println("<script type='text/javascript'>jQuery(document).ready(function(){$('.tooltips').tooltip();$('.bt-excluir').click(function(event){event.preventDefault();var id=$(event.target).attr('data-id');var nome=$(event.target).attr('data-info');console.log(event.target);$('#exclusao h3 span').text(nome);$('#id-exclude').attr('value', id);$('#exclusao').fadeIn(800);});});</script>");
 				
 				
 	
