@@ -1,0 +1,14 @@
+servlets\getConnection.class
+classes\Professor.class
+database\Conexao.class
+database\OperacaoUsuario.class
+database\OperacaoOcorrencia.class
+database\OperacaoProfessor.class
+servlets\RecebeDados.class
+classes\Ocorrencia.class
+classes\Coordenacao.class
+classes\Materia.class
+database\OperacaoMateria.class
+classes\Usuario.class
+classes\Estudante.class
+database\OperacaoEstudante.class
