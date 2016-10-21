@@ -42,6 +42,25 @@ public class OperacaoUsuario {
 		return conteudo;		
 	}
 	
+	public ArrayList<String> listaUsuarioId(int id) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{
+
+		Conexao conexao = new Conexao();		
+		StringBuilder sql = new StringBuilder();
+		sql.append("SELECT * FROM USUARIO WHERE id = ? ");
+		PreparedStatement statement =  conexao.getPreparedStatement(conexao.getConnection(), sql.toString());
+		statement.setInt(1, id);
+		ResultSet resultSet = statement.executeQuery();
+		ArrayList<String> conteudo = new ArrayList<String>();				
+		
+		while(resultSet.next()){
+			conteudo.add(String.valueOf(resultSet.getInt("id")));
+			conteudo.add(resultSet.getString("nome"));
+			conteudo.add(resultSet.getString("email"));
+			conteudo.add(resultSet.getString("senha"));
+		}
+		return conteudo;		
+	}
+	
 	public void updateUsuario(int id, Usuario usuario) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{
 		Conexao conexao = new Conexao();		
 		StringBuilder sql = new StringBuilder();
