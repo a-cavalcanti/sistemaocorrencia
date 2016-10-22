@@ -35,3 +35,5 @@
 		</tbody> 
 	</table>
 </div>
+
+<script src="src/js/controller-estudante.js"></script>

@@ -47,3 +47,5 @@
 		</form>
 	</div>
 </div>
+
+<script src="src/js/controller-usuario.js"></script>

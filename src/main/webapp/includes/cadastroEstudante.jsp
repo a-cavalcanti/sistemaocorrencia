@@ -29,3 +29,5 @@
 		</form>
 	</div>
 </div>
+
+<script src="src/js/controller-estudante.js"></script>

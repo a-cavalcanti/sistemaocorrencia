@@ -7,6 +7,10 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <link rel="stylesheet" href="src/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="src/css/main.css">
+<script src="src/jquery/jquery-2.1.3.min.js"></script>
+<script src="src/bootstrap/js/bootstrap.js"></script>
+<script src="src/js/main.js"></script>
+
 <title>IFPE - Instituto Federal de Pernambuco - Campus Garanhuns - Sistema de Ocorrências</title>
 </head>
 <body>
@@ -101,6 +105,7 @@
 								<%
 							}
 						}
+
 						}else{%>
 						<%@include file="includes/home.jsp" %>
 						<%} %>
@@ -114,8 +119,5 @@
 
 
 
-<script src="src/jquery/jquery-2.1.3.min.js"></script>
-<script src="src/bootstrap/js/bootstrap.js"></script>
-<script src="src/js/main.js"></script>
 </body>
 </html>

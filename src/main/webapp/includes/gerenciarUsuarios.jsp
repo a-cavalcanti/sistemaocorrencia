@@ -35,3 +35,4 @@
 		</tbody> 
 	</table>
 </div>
+<script src="src/js/controller-usuario.js"></script>
