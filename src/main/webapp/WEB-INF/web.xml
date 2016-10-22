@@ -25,6 +25,12 @@
     	<description></description>
     	<servlet-class>servlets.ListarUsuarioId</servlet-class>
     </servlet>
+    <servlet>
+    	<servlet-name>AtualizarUsuario</servlet-name>
+    	<display-name>AtualizarUsuario</display-name>
+    	<description></description>
+    	<servlet-class>servlets.AtualizarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
     	<servlet-name>AdicionarUsuario</servlet-name>
     	<url-pattern>/AdicionarUsuario</url-pattern>
@@ -36,6 +42,10 @@
     <servlet-mapping>
     	<servlet-name>ListarUsuarioId</servlet-name>
     	<url-pattern>/ListarUsuarioId</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AtualizarUsuario</servlet-name>
+    	<url-pattern>/AtualizarUsuario</url-pattern>
     </servlet-mapping>
 
 

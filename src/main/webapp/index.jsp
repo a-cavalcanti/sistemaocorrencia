@@ -80,7 +80,7 @@
 							}
 							if(operacao.equals("editar")){
 								%>
-								<%@include file="ListarUsuarioId" %>
+								<%@include file="includes/editarUsuario.jsp" %>
 								<%
 							}
 						}

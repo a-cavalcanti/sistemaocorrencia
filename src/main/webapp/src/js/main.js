@@ -44,6 +44,30 @@ jQuery('#form-add-usuario').submit(function(){
 			
 		});
 
+jQuery('#form-update-usuario').submit(function(){
+
+	loadIn();
+
+			var dados = jQuery(this).serialize();
+
+			jQuery.ajax({
+				type: "POST",
+				url: "AtualizarUsuario",
+				data: dados,
+				success: function(data)
+				{ 
+					$('#form-update-usuario').each(function(){
+  					this.reset();
+					});
+					loadOut();
+					mensagem(data);
+				}
+			});
+			return false;
+			
+		});
+
+
 jQuery('#form-excluir').submit(function(){
 			loadIn();
 			var dados = jQuery(this).serialize();

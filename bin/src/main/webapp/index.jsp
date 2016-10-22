@@ -78,6 +78,11 @@
 								<%@include file="includes/gerenciarUsuarios.jsp" %>
 								<%
 							}
+							if(operacao.equals("editar")){
+								%>
+								<%@include file="ListarUsuarioId" %>
+								<%
+							}
 						}
 						}else{%>
 						<%@include file="includes/home.jsp" %>

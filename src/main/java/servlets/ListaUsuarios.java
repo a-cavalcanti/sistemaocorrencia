@@ -51,7 +51,7 @@ public class ListaUsuarios extends HttpServlet {
 				writer.print("<td>"+ lista.get(i).get("nome") +"</td>");
 				writer.print("<td>"+ lista.get(i).get("email") +"</td> ");
 				writer.print("<td class='ops'>");
-				writer.print("<a class='tooltips' data-toggle='tooltip' data-placement='right' title='Editar'>");
+				writer.print("<a class='tooltips' data-toggle='tooltip' href='ListarUsuarioId?id="+ lista.get(i).get("id") +"' data-placement='right' title='Editar'>");
 				writer.print("<div class='table-ops ativar bt-ativar' data-id=''></div>");
 				writer.print("</a>");
 				writer.print("<div class='table-ops excluir bt-excluir' data-id='"+ lista.get(i).get("id") +"' data-info='"+ lista.get(i).get("nome") +"'></div>");
