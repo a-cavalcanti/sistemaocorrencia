@@ -44,6 +44,30 @@ jQuery('#form-add-usuario').submit(function(){
 			
 		});
 
+jQuery('#form-add-estudante').submit(function(){
+
+	loadIn();
+
+			var dados = jQuery(this).serialize();
+
+			jQuery.ajax({
+				type: "POST",
+				url: "AdicionarEstudante",
+				data: dados,
+				success: function(data)
+				{ 
+					$('#form-add-estudante').each(function(){
+  					this.reset();
+					});
+					loadOut();
+					mensagem(data);
+				}
+			});
+			return false;
+			
+		});
+
+
 jQuery('#form-update-usuario').submit(function(){
 
 	loadIn();

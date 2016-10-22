@@ -84,6 +84,23 @@
 								<%
 							}
 						}
+						if(section.equals("estudantes")){
+							if(operacao.equals("cadastrar")){
+								%>
+								<%@include file="includes/cadastroEstudante.jsp" %>
+								<%
+							}
+							if(operacao.equals("gerenciar")){
+								%>
+								<%@include file="includes/gerenciarEstudantes.jsp" %>
+								<%
+							}
+							if(operacao.equals("editar")){
+								%>
+								<%@include file="includes/editarEstudante.jsp" %>
+								<%
+							}
+						}
 						}else{%>
 						<%@include file="includes/home.jsp" %>
 						<%} %>

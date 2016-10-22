@@ -8,21 +8,22 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
+import classes.Estudante;
 import classes.Usuario;
+import database.OperacaoEstudante;
 import database.OperacaoUsuario;
 
 /**
- * Servlet implementation class AdicionarUsuario
+ * Servlet implementation class AdicionarEstudante
  */
-public class AdicionarUsuario extends HttpServlet {
+public class AdicionarEstudante extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AdicionarUsuario() {
+    public AdicionarEstudante() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,30 +33,29 @@ public class AdicionarUsuario extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
+
 		PrintWriter imprime = response.getWriter();
 		
 		String nome = request.getParameter("nome");
-		String senha = request.getParameter("senha");
-		String email = request.getParameter("email");
-		String confirmaSenha = request.getParameter("confirmaSenha");
+		String ano = request.getParameter("ano-curso");
 		
-		if (senha.equals(confirmaSenha)) {
-			Usuario usuario = new Usuario();
-			usuario.setNome(nome);
-			usuario.setEmail(email);
-			usuario.setSenha(senha);			
-			OperacaoUsuario op = new OperacaoUsuario();
+		
+		
+			Estudante estudante = new Estudante();
+			estudante.setNome(nome);
+			estudante.setAnoCursoAtual(ano);
+			
+			OperacaoEstudante op = new OperacaoEstudante();
 			try {
-				op.adicionarUsuario(usuario);
-				imprime.write("Usuário adicionado com sucesso.");
+				op.adicionarEstudante(estudante);
+				imprime.write("Estudante adicionado com sucesso.");
 			} catch (InstantiationException e) {
 				// TODO Auto-generated catch block
 				imprime.write("Aconteceu um erro");
@@ -74,9 +74,6 @@ public class AdicionarUsuario extends HttpServlet {
 				e.printStackTrace();
 			}
 			
-		}else{
-			imprime.write("As senhas n�o conferem");
-		}
-	}
 
+}
 }

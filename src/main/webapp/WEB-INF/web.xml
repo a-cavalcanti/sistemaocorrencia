@@ -31,6 +31,12 @@
     	<description></description>
     	<servlet-class>servlets.AtualizarUsuario</servlet-class>
     </servlet>
+    <servlet>
+    	<servlet-name>AdicionarEstudante</servlet-name>
+    	<display-name>AdicionarEstudante</display-name>
+    	<description></description>
+    	<servlet-class>servlets.AdicionarEstudante</servlet-class>
+    </servlet>
     <servlet-mapping>
     	<servlet-name>AdicionarUsuario</servlet-name>
     	<url-pattern>/AdicionarUsuario</url-pattern>
@@ -46,6 +52,10 @@
     <servlet-mapping>
     	<servlet-name>AtualizarUsuario</servlet-name>
     	<url-pattern>/AtualizarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AdicionarEstudante</servlet-name>
+    	<url-pattern>/AdicionarEstudante</url-pattern>
     </servlet-mapping>
 
 
