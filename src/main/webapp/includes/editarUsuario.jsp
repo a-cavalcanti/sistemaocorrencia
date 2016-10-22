@@ -1,5 +1,5 @@
 <div class="header-conteudo">
-		<h2>Usu√°rios &rsaquo; Editar</h2>
+		<h2>Usu·rios &rsaquo; Editar</h2>
 	</div>
 <div class="conteudo">
 <%

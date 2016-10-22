@@ -1,5 +1,5 @@
 <div class="header-conteudo">
-		<h2>Usu·rios </h2>
+		<h2>Usu·rios &rsaquo; Adicionar</h2>
 	</div>
 <div class="conteudo">
 	
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 
-			<button type="submit" class="btn bt-padrao">CRIAR USU¡ÅRIO</button>
+			<button type="submit" class="btn bt-padrao">ADICIONAR</button>
 		</form>
 	</div>
 </div>

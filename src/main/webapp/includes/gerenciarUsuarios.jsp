@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <div class="header-conteudo">
-		<h2>Usuários </h2>
+		<h2>Usuários &rsaquo; Gerenciar</h2>
 	</div>
 <div class="conteudo">
 	

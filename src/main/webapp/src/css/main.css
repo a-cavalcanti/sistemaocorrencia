@@ -80,6 +80,7 @@ header{
 	background-repeat: no-repeat;
 	display: inline-block;
 	vertical-align: middle;
+  z-index: 999;
 }
 .main .menu-header h6{
 	color: #FFF;
