@@ -23,7 +23,7 @@
 		            </li>
 		            <li class="panel panel-default" id="dropdown">
 		                <a data-toggle="collapse" href="#dropdown-lvl2">
-		                    <span class="glyphicon glyphicon-user"></span> Ocorrências <span class="caret"></span>
+		                    <span class="glyphicon glyphicon-menu-right"></span> Ocorrências <span class="caret"></span>
 		                </a>
 		                <div id="dropdown-lvl2" class="panel-collapse collapse">
 		                    <div class="panel-body">
@@ -36,7 +36,7 @@
 		            </li>
 		            <li class="panel panel-default" id="dropdown">
 		                <a data-toggle="collapse" href="#dropdown-lvl3">
-		                    <span class="glyphicon glyphicon-user"></span> Estudantes <span class="caret"></span>
+		                    <span class="glyphicon glyphicon-menu-right"></span> Estudantes <span class="caret"></span>
 		                </a>
 		                <div id="dropdown-lvl3" class="panel-collapse collapse">
 		                    <div class="panel-body">
@@ -49,7 +49,7 @@
 		            </li>
 		            <li class="panel panel-default" id="dropdown">
 		                <a data-toggle="collapse" href="#dropdown-lvl4">
-		                    <span class="glyphicon glyphicon-user"></span> Professores <span class="caret"></span>
+		                    <span class="glyphicon glyphicon-menu-right"></span> Professores <span class="caret"></span>
 		                </a>
 		                <div id="dropdown-lvl4" class="panel-collapse collapse">
 		                    <div class="panel-body">
@@ -62,7 +62,7 @@
 		            </li>
 		            <li class="panel panel-default" id="dropdown">
 		                <a data-toggle="collapse" href="#dropdown-lvl5">
-		                    <span class="glyphicon glyphicon-user"></span> Materias <span class="caret"></span>
+		                    <span class="glyphicon glyphicon-menu-right"></span> Materias <span class="caret"></span>
 		                </a>
 		                <div id="dropdown-lvl5" class="panel-collapse collapse">
 		                    <div class="panel-body">

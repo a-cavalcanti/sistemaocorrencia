@@ -9,7 +9,7 @@
 		<section id="exclusao">
 				<h3>Deseja excluir: <span></span></h3>
 				<form id="form-excluir">
-					<input type="hidden" id="id-exclude" name="id_usuario">
+					<input type="hidden" id="id-exclude" name="id_estudante">
 					<input type="submit" value="SIM" class="bt-sim">
 					<button class="bt-nao"> NÃO </button>
 				</form>
